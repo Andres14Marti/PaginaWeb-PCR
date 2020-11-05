@@ -1,0 +1,241 @@
+
+.bannerd h1#sacra{
+    top: calc(50% - 55px);
+	left: calc(49% - 150px);  
+}
+
+.iconos{
+    margin-bottom: 1em;
+}
+
+.iconos .logos{
+    margin-bottom: 2em;
+}
+
+.sliderTrack img{
+    width: 415px;
+}
+
+
+.iconos .logos img{
+    /*width: 30%;
+    height: 30%;
+    position: center;
+    display: block;*/
+    position: relative;
+    width: 30%;
+    height: 33%;
+    padding: 30px 10px 1px 5px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;    
+}
+
+
+
+.iconos .logos h2{
+    vertical-align:baseline;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+}
+
+
+/* IMAGEN PRINCIPAL Y CITA BIBLICA */
+
+.imagenbasica img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 90vh;
+  width: 100vw;
+  position: relative;
+}
+
+
+.imagenbasica h1{
+    font-family: 'Bebas Neue', cursive;
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    top: calc(32% - 72px);
+    left: calc(3% - 72px);
+    text-align: center;
+    margin-left: 35%;
+    margin-right: 15%;
+    padding: 0.5em;
+    background-color: rgba(151, 150, 150, 0.6);
+    /* font-size: 38px; */
+    margin-top: auto;
+}
+
+.imagenbasica h1 p{
+    font-weight: normal;
+}
+
+
+/* TITULO SACRAMENTO Y TEXTO */
+
+#tituloSacra{
+    margin-top: 1em;
+}
+
+.textobasico{
+    margin-bottom: 0.5em;
+}
+
+.textobasico h3{
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.5em;
+    text-align: center;
+    color: #ffff;
+    background-color: #981E1B;
+}
+
+
+/* IMAGENES POR PASO */
+.leftImage{
+    margin-top: 1.6em;
+}
+
+.leftImage img{
+    width: 100vw;
+    margin: 5px;
+    margin-left: auto;
+  margin-right: auto;
+    /*padding: 5px;*/
+    box-shadow: 1px 1px 3px #000;
+}
+
+.leftImage #tituloReq{
+    font-weight: bold;
+}
+
+.leftImage p, ul{
+    background-color: #981E1B;
+    opacity: 0.8; 
+    opacity: 60%;
+    padding: 18px;
+    margin: 0px;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+}
+
+
+.leftImage img{
+    margin-bottom: 0px;
+}
+
+.leftImage ul{
+    padding-left: 49px;
+}
+
+.leftImage ul li{
+    padding-bottom: 0.5em;
+}
+
+#lastLeftImage{
+    margin-bottom: 2em;
+}
+
+
+@media(min-width: 415px) /* TABLETAS */
+{    
+    .bannerd h1#sacra{
+	    left: calc(34% - 150px);  
+    }
+
+    .iconos .logos img{
+        width: 90px;
+    }
+
+    .iconos .segunda_fila{
+        margin-left: 5em;
+    }
+
+    .iconos .segunda_fila .logos{
+        padding-left: 4em;
+    }
+
+    .imagenbasica h1{
+        left: calc(1% - 80px);
+        top: calc(40% - 72px);
+        padding: 1em;
+        font-size: 2.5em;
+    }
+
+    .textobasico h3{
+        font-size: 1.7em;
+    }
+
+    .leftImage{
+        display: flex;
+        flex-direction: row;
+        align-items: stretch;
+        justify-content: center;
+        width: 100vw;
+    }
+
+    .leftImage img{
+        width: 40%;
+        margin-top: 0px;
+    }
+
+    .leftImage p, ul{
+        box-sizing: border-box;
+    }
+
+    .sliderTrack img{
+        width: 415px;
+    }
+
+}
+
+@media(min-width: 1024px) /* ORDENADORES */
+{
+    .bannerd h1#sacra{
+	    left: calc(43% - 150px);  
+    }
+
+    .iconos .segunda_fila{
+        margin-left: 15em;
+    }
+
+    .iconos .logos img{
+        width: 120px;
+    }
+
+    .imagenbasica img{
+        width: 98.9vw;
+    }
+
+    .imagenbasica h1{
+        left: calc(1% - 270px);
+        top: calc(51% - 72px);
+    }
+
+    .leftImage{
+        width: 98.9vw;
+        margin: 2px 0px;
+        padding-right: 0px;
+        margin-top: 1.5em;
+    }
+
+    .leftImage #tituloReq{
+        max-width: 210px;
+    }
+
+    .leftImage img{
+        width: 45%;
+    }
+    
+    .leftImage ul{
+        width: 45%; /*45%*/
+        padding-top: 4em;
+        padding-right: 2em;
+    }
+    
+
+}
+
+

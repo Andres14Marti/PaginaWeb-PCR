@@ -1,0 +1,2337 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Raleway', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #1d273b;
+    font-weight: 300;
+}
+
+/*-------- Inicia el menu --------*/
+
+/**/
+.contenedor {
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+
+.contenedor1 {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+    padding: 60px 0;
+}
+
+
+h1 {
+    font-size: 50px;
+}
+
+
+/* Header */
+header::before {
+    content: "";
+    display: block;
+    margin-bottom: 80px;
+
+   
+}
+
+.index{
+    width: 100%;
+    height: 600px;
+    background: #bc4e9c;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hsla(25, 16%, 41%, 0.459), hsla(21, 48%, 53%, 0.664)), url(../img/banner.jpg);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(25, 16%, 41%, 0.459), hsla(21, 48%, 53%, 0.664)), url(../img/banner.jpg);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+
+nav {
+
+    width: 100%;
+    height: 80px;
+    background: linear-gradient(to right, #7A6658, #C0754D);
+    border-bottom: 1px solid transparent;
+    box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, .2);
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    transition: ease-in-out 0.5s;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    width: 100%;
+    align-items: center;
+    padding: 0 30px;
+}
+
+.nav .logo {
+    height: 80px;
+
+}
+
+.nav .logo img {
+    height: 100%;
+    vertical-align: top;
+}
+
+.enlaces-header {
+    font-weight: 300;
+    transition: ease-in-out 0.5s;
+}
+ nav .enlaces-header .active{
+	border-bottom: 2px solid #f9f864;
+}
+
+.nav .enlaces-header a {
+    color: #fff;
+    text-decoration: none;
+   
+    margin-left: 20px;
+}
+nav .enlaces-header > a:hover{
+    /*border-top: 3px solid #f9f864;*/
+    border-bottom: 2px solid #f9f864;
+     
+}
+
+header .textos-header{
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.textos-header h1{
+    font-size: 50px;
+    color:#fff;
+}
+
+.textos-header h2{
+    font-size: 30px;
+    font-weight: 300;
+    color:#fff;
+}
+
+.wave{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.hamburguer {
+    width: 80px;
+    height: 80px;
+    display: none;
+    text-align: center;
+    z-index: 100;
+    cursor: pointer;
+    transition: color 0.5s ease-in;
+}
+
+.hamburguer>i {
+    font-size: 25px;
+    line-height: 80px;
+}
+
+.contenido-header {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contenido-header>img {
+    width: 550px;
+    animation: ease-in animat 1s;
+}
+
+@keyframes animat {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+.textos-header {
+    margin: 0 0 0 30px;
+}
+
+.contenido-header p {
+    font-weight: 100;
+    margin-top: 14px;
+    color: #5D6678;
+}
+
+
+.contenido-header a {
+    margin: 28px 0 0 0;
+    width: 130px;
+    display: inline-block;
+    background: #1FDE82;
+    text-align: center;
+    color: #fff;
+    padding: 12px 0;
+    text-decoration: none;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 14px;
+    border-radius: 5px;
+    box-shadow: 0 8px 32px rgba(31, 222, 130, .46);
+}
+
+.titulo {
+    font-size: 50px;
+}
+
+
+
+/*-------- termina el menu --------*/
+
+/*todo de la pagina del Index*/
+
+/* About us */
+
+.about-us {
+    background: #f2f2f2;
+}
+
+.contenedor-articulo {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 60px;
+    justify-content: space-around;
+}
+
+.articulo {
+    width: 29%;
+    background: #fff;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    padding: 45px 30px 60px 30px;
+    transition: 0.5s;
+}
+
+.articulo:hover {
+    box-shadow: 0 4px 10px rgba(17, 29, 48, .26);
+}
+
+.articulo>i {
+    font-size: 30px;
+    color: #fff;
+    background: #981E1B;
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    padding-top: 20px;
+    border-radius: 50%;
+    box-shadow: 0 8px 32px rgba(199, 226, 22, 0.46);
+}
+
+.articulo>h3 {
+    font-size: 24px;
+    margin-top: 30px;
+}
+
+.articulo>p {
+    font-weight: 100;
+    color: #5D6678;
+    margin-top: 15px;
+    padding-bottom: 20px;
+}
+
+.articulo>a {
+    color: #5D6678;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.articulo>a:hover {
+    color: #1FDE82;
+    transition: color .5s;
+}
+
+/* Questions */
+
+
+.questions {
+    height: 600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.questions>img {
+    width: 550px;
+}
+
+.textos-questions {
+    margin: 0 0 0 30px;
+}
+
+.textos-questions p {
+    font-weight: 100;
+    margin-top: 14px;
+    color: #5D6678;
+}
+
+
+.textos-questions a {
+    margin: 28px 0 0 0;
+    width: 130px;
+    display: inline-block;
+    background: #B01713;
+    text-align: center;
+    color: #fff;
+    padding: 12px 0;
+    text-decoration: none;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 14px;
+    border-radius: 5px;
+    box-shadow: 0 8px 32px rgba(31, 222, 130, .46);
+}
+
+/* Sacerdotes */
+.titulo {
+    color: #000;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+.cards{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.cards .card{
+    background: #b01713;
+    display: flex;
+    width: 46%;
+    height: 200px;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.6);
+}
+
+.cards .card img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    display: block;
+}
+
+.cards .card > .contenido-texto-card{
+    width: 60%;
+    color: #fff;
+    
+}
+.cards .card h4{
+	color: #fff;
+}
+
+.cards .card > .contenido-texto-card p{
+    font-weight: 300;
+    padding-top: 5px;
+}
+
+
+
+/* Services */
+
+.services {
+    display: flex;
+    justify-content: space-between;
+}
+
+.services>img {
+    width: 500px;
+}
+
+.box-skills {
+    margin: 30px 30px 0 0;
+}
+
+.box-skills h4 {
+    font-size: 24px;
+    background: #f2f2f2;
+    width: 350px;
+    border-radius: 6px;
+    padding: 10px 0 10px 15px;
+    margin-bottom: 10px;
+}
+
+.box-skills i {
+    color: #1FDE82;
+    font-size: 20px;
+}
+
+
+/*----Footer------*/
+
+footer {
+	width: 100%;
+	font-family: Raleway;
+}
+
+.footer-container {
+	width: 100%;
+	background:linear-gradient(to right, #7A6658, #C0754D);;
+    color: #f2f2f2;
+}
+
+.footer-main {
+	width: 98%;
+	max-width: 1000px;
+	margin: auto;
+	padding: 50px 0;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.footer-main .footer-columna {
+	width: calc(100% / 3);
+	text-align: justify;
+}
+
+
+.footer-main .footer-columna:nth-child(2) {
+	padding: 0 20px;
+}
+
+.footer-main .footer-columna h3 {
+	font-size: 32px;
+	color: #333;
+	margin-bottom: 20px;
+}
+
+.footer-main .footer-columna input[type="email"] {
+	border: none;
+	width: 100%;
+	border: 1px solid #00C6EE;
+	font-size: 14px;
+	padding: 10px;
+	font-family: Raleway;
+}
+
+.footer-main .footer-columna input[type="submit"] {
+	border: none;
+	background: #00C6EE;
+	color: #fff;
+	padding: 10px 40px;
+	font-size: 18px;
+	margin-top: 10px;
+	cursor: pointer;
+	font-family: Raleway;
+}
+
+.footer-main .footer-columna span p {
+	display: inline-block;
+	margin-left: 5px;
+	margin-bottom: 15px;
+	font-family: Raleway;
+}
+
+.footer-copy-redes {
+	width: 100%;
+	background: linear-gradient(to right, #7A6658, #C0754D);
+   
+    opacity: 0.8;
+}
+.footer-copy p{
+	color: #f2f2f2;
+}
+
+.main-copy-redes {
+	width: 98%;
+	max-width: 1000px;
+	padding: 15px 0;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	-ms-align-items: center;
+	align-items: center;
+}
+
+.main-copy-redes .footer-copy {
+	width: 70%;
+	color: #333;
+}
+
+.main-copy-redes .footer-redes {
+	width: 30%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+
+.main-copy-redes .footer-redes a {
+	display: inline-block;
+	text-decoration: none;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	border-radius:50%;
+	background: #fff;
+	color: #000;
+	text-align: center;
+}
+.footer-copy-redes .footer-redes #facebook:hover{
+    background-color:#4267B2;
+    color: white;
+}
+
+.main-copy-redes .footer-redes #twitter:hover{
+    background-color:#00ACED ;
+    color: white;
+}
+
+.main-copy-redes .footer-redes #youtube:hover{
+    background-color:#FF0000 ;
+    color: white;
+}
+.main-copy-redes .footer-redes #instagram:hover{
+    background-color:hsla(310, 78%, 49%, 0.479);
+    color: white;
+}
+
+/* Breakpoints responsive */
+
+@media screen and (max-width:900px) {
+    .titulo {
+        font-size: 45px;
+    }
+
+    header{
+		background-position: center;
+		/* background: url(../img/banner-900w.jpg); */
+    }
+
+
+    .contenido-header {
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 720px;
+    }
+
+    .contenido-header>img {
+        width: 400px;
+    }
+
+    .textos-header {
+        margin: 0;
+	}
+
+	.contenido-header {
+        height: 650px;
+    }
+
+    .nav {
+        padding: 0 10px;
+    }
+
+    .contenido-header>img {
+        width: 200px;
+    }
+
+    .enlaces-header {
+        position: fixed;
+        background: #f46b45;
+        /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #7A6658, #C0754D);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #7A6658, #C0754D);
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-evenly;
+        clip-path: circle(0.0% at 100% 0);
+    }
+
+    .nav .menudos {
+
+        -webkit-clip-path: circle(150% at 100% 0);
+        clip-path: circle(150% at 100% 0);
+
+    }
+
+    .nav .enlaces-header a {
+        color: #fff;
+    }
+
+    .hamburguer {
+        display: block;
+    }
+	
+	
+    /* Clientes */
+
+    .cards{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cards .card{
+        width: 90%;
+    }
+
+    .cards .card:first-child{
+        margin-bottom: 30px;
+    }
+
+    /* About us */
+
+    .articulo {
+        width: 45%;
+    }
+
+    /* Questions */
+
+    .questions {
+        height: 720px;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+
+    .questions>img {
+        width: 400px;
+    }
+
+    /* results */
+
+    .conten-results {
+        flex-direction: column-reverse;
+    }
+
+    .results-text>a {
+        margin-bottom: 60px;
+    }
+
+    .numbers {
+        width: 100%;
+        /* justify-content: space-between; */
+    }
+
+    .results-text {
+        width: 100%;
+    }
+
+    /* Services */
+
+    .services {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .box-skills {
+        margin: 0 0 40px 0;
+
+    }
+
+    .box-skills h4 {
+        width: 500px;
+    }
+
+    .services>img {
+        width: 400px;
+    }
+
+}
+
+@media screen and (max-width:600px) {
+    .titulo {
+        font-size: 35px;
+    }
+    
+    .textos-header h1{
+        font-size: 35px;
+    }
+
+    .textos-header h2{
+        font-size: 20px;
+    }
+    h1 {
+        font-size: 40px;
+    }
+
+    .contenido-header {
+        height: 650px;
+    }
+
+    .nav {
+        padding: 0 10px;
+    }
+
+    .contenido-header>img {
+        width: 200px;
+    }
+
+    .enlaces-header {
+        position: fixed;
+        background: #f46b45;
+        /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #7A6658, #C0754D);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #7A6658, #C0754D);
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-evenly;
+        clip-path: circle(0.0% at 100% 0);
+    }
+
+    .nav .menudos {
+
+        -webkit-clip-path: circle(150% at 100% 0);
+        clip-path: circle(150% at 100% 0);
+
+    }
+
+    .nav .enlaces-header a {
+        color: #fff;
+    }
+
+    .hamburguer {
+        display: block;
+    }
+
+    /* About us */
+
+    .articulo {
+        width: 95%;
+    }
+     /* Clients */
+
+     .cards .card{
+        height: 450px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cards .card img{
+        width: 90px;
+        height: 90px;
+    }
+
+
+    /* Questions */
+
+    .questions>img {
+        width: 200px;
+    }
+
+    /* results */
+
+    .numbers .number {
+        width: 95%;
+    }
+
+    .results-text h4 {
+        font-size: 35px;
+    }
+
+    /* Services */
+
+    .services>img {
+        width: 200px;
+    }
+
+    .box-skills h4 {
+        width: 100%;
+    }
+}
+
+@media screen  and (max-width: 938px) {
+	.info-main {
+		padding: 30px 10px;
+	}
+
+	.footer-main .footer-columna {
+		text-align: justify;
+		padding: 0 10px;
+	}
+
+	.footer-main .footer-columna h3 {
+		font-size: 28px;
+	}
+
+	.footer-main .footer-columna p {
+		font-size: 14px;
+	}
+}
+
+@media screen  and (max-width: 846px) {
+	.info-main {
+		padding: 30px 30px;
+		text-align: justify;
+	}
+
+	.info-main 
+
+	.info-main h3 {
+		font-size: 30px;
+	}
+
+	.footer-main {
+		padding: 10px 0;
+	}
+
+	.footer-main .footer-columna {
+		width: 100%;
+		text-align: center;
+		margin: 10px 0;
+	}
+
+	.footer-main .footer-columna h3 {
+		margin-bottom: 5px;
+	}
+
+	.footer-main .footer-columna span {
+		display: block;
+	}
+	
+	.main-copy-redes .footer-copy {
+		width: 100%;
+		text-align: center;
+		margin-bottom: 20px;
+	}
+
+	.main-copy-redes .footer-redes {
+		width: 80%;
+		margin: auto;
+	}
+
+}
+
+
+
+/*--------------------------Pagina NUestra parroquia ---------------------------------------*/
+
+
+/* About us */
+
+#historia
+{
+	padding: 0px 0px 30px 15px;
+}
+main .sobre-nosotros{
+    padding: 30px 0 60px 0;
+}
+.contenedor-sobre-nosotros{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.imagen-about-us{
+    width: 48%;
+}
+
+.sobre-nosotros .contenido-textos{
+    width: 48%;
+}
+
+.contenido-textos h3{
+    margin-bottom: 15px;
+}
+
+.contenido-textos h3 span{
+    background: #A05F01;
+    color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+    margin-right: 5px;
+}
+
+.contenido-textos p{
+    padding: 0px 0px 30px 15px;
+    font-weight: 300;
+    text-align: justify;
+}
+main .historia{
+	padding: 30px 0 60px 0;
+	
+}
+
+.historia-parrafo{
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.linean{
+	width: 40%;
+	margin-left: 30%;
+	border-bottom: 4px solid #981e1b;
+	margin-bottom: 3em;
+}
+
+#historia {
+	text-align: justify;
+	font-size: 20px;
+}
+
+@media screen and (max-width:900px){
+
+	#nosotros img{
+		max-width: 900px;
+		
+	}
+	.contenedor-sobre-nosotros{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sobre-nosotros .contenido-textos{
+        width: 90%;
+    }
+
+    .imagen-about-us{
+        width: 90%;
+	}
+	.historia-parrafo{
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 90%;
+		padding: 0px 0px 30px 15px;
+	}
+
+
+}
+@media screen and (max-width:500px){
+	#nosotros img{
+		max-width: 500px;
+		
+	}
+	.imagen-about-us{
+        margin-bottom: 60px;
+        width: 99%;
+    }
+
+    .sobre-nosotros .contenido-textos{
+        width: 95%;
+	}
+	
+	.historia-parrafo{
+		width: 95%;
+	}
+}
+
+@media screen and (max-width: 480){
+	#nosotros img{
+		max-width: 400px;
+		
+	}
+}
+@media screen and (max-width: 375){
+	#nosotros img{
+		max-width: 300px;
+		
+	}
+}
+
+
+
+/***************************************************************************************/
+
+/*BANNER*/
+.sliderLens{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    width: 100vw; /* vw = viewportwidth  Toma todo el ancho visible del browser */
+    height: 100vh; /* vh = viewportheight  Toma todo el alto visible del browser */
+    overflow: hidden; /* Todo lo que se salga del tamaño del contenedor se oculta */
+    position: relative; /* Declaramos un plano cartesiano en sliderLens */
+}
+
+.sliderTrack{
+    position: absolute;
+    /* top y left para ubicarlo en la esquina superior izquierda */
+    top: 0px;
+    left: 0px;
+    transition: 1s ease-in-out left; /* Empieza rapido, se calma a la mitad y termina rapido */
+    /*width: calc(3*100vw); /*ESTO SE PONE EN js*/
+    clear: both;
+}
+
+.sliderItem{
+    position: relative;
+    display: block;
+    /* Clase Sellada: Ninguna clase puede heredar de ella porque es la última 
+       !important: Esta propiedad no la va a poder cambiar nada*/
+    width: 100vw !important;
+    overflow: hidden;
+    padding: 0px; 
+    margin: 0px; 
+    float: left; /* Hace que se muevan en un direccion */
+}
+
+.sliderItem img{
+    height: 100vh; 
+}
+.puntos{
+    position: relative;
+    top: 95vh;
+    width: 100vw;
+    height: 40px;
+    background-color: rgba(152, 30, 27, 0.60);
+    text-align: center;
+}
+
+.puntos .dot{
+    z-index: 1;
+    border: 2px solid #fff;
+    border-radius: 100%;
+    background-color: transparent;  
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    margin-top: 11px;
+    margin-left: 4px;
+    cursor: pointer;
+}
+
+.puntos #dot1{
+    background-color: #333; 
+}
+
+@media (min-width: 568px)
+{
+    .sliderItem img{
+        width: 100vw;
+    }
+}
+/*--------------------------Pagina NUestra parroquia ---------------------------------------*/
+
+
+/*CENTRAR TITULOS DE SERVICIOS----------------------------------------------------------------------------------------------*/
+.bannerd .tituloservicios h1{
+	
+	font-family: "Bebas Neue", "cursive", "Arial", sans-serif;
+	position: absolute;
+
+	/* Centrando el Titulo */
+	width: 300px;
+	top: calc(50% - 55px);
+	left: calc(59% - 150px); 
+
+	font-size: 4.9em;
+	/*padding-bottom: 2em;*/
+	color: #fff;
+	text-shadow: 7px 3px 3px gray;
+
+	z-index: 1; /* PARA QUE SE MUESTRE ARRIBA DE LAS IMAGENES */
+}
+
+.bannerd .tituloactli h1{
+	font-family: "Bebas Neue", "cursive", "Arial", sans-serif;
+	position: absolute;
+	text-align: center;
+
+	/* Centrando el Titulo */
+	width: 300px;
+	top: calc(50% - 55px);
+	left: calc(65% - 200px); 
+
+	font-size: 4.5em;
+	/*padding-bottom: 2em;*/
+	color: #fff;
+	text-shadow: 7px 3px 3px gray;
+
+	z-index: 1; /* PARA QUE SE MUESTRE ARRIBA DE LAS IMAGENES */
+}
+
+.bannerd .tituloofi h1{
+	font-family: "Bebas Neue", "cursive", "Arial", sans-serif;
+	position: absolute;
+	text-align: center;
+
+	/* Centrando el Titulo */
+	width: 300px;
+	top: calc(45% - 55px);
+	left: calc(61% - 185px); 
+
+	font-size: 4.5em;
+	/*padding-bottom: 2em;*/
+	color: #fff;
+	text-shadow: 7px 3px 3px gray;
+
+	z-index: 1; /* PARA QUE SE MUESTRE ARRIBA DE LAS IMAGENES */
+}
+/*TERMINA CENTRAR TITULOS DE SERVICIOS-----------------------------------------------------------------------------------------------*/
+
+
+
+/********************************  DIMENSIONES ******************************/
+
+/*-----------BANNER-------------*/
+.bannerd{
+	background-color: #965752;
+	/*margin-top: 3em;*/
+	width: 100vw;
+	height: 100vh;
+	margin-bottom: 3em;
+	position: relative;
+	overflow: hidden;
+}
+
+.bannerd h1{
+	font-family: "Bebas Neue", "cursive", "Arial", sans-serif;
+	position: absolute;
+
+	/* Centrando el Titulo */
+	width: 300px;
+	top: calc(50% - 55px);
+	left: calc(50% - 150px); 
+
+	font-size: 4.5em;
+	/*padding-bottom: 2em;*/
+	color: #fff;
+	text-shadow: 7px 3px 3px gray;
+
+	z-index: 1; /* PARA QUE SE MUESTRE ARRIBA DE LAS IMAGENES */
+}
+
+.sliderTrack img{
+	width: 450px;
+
+}
+
+.bannerd h1#pascual{
+	top: calc(50% - 55px);
+	left: calc(65% - 150px); 
+}
+
+.bannerd h1#misionera{
+	top: calc(50% - 55px);
+	left: calc(60% - 150px); 
+}
+
+
+.bannerd .sliderTrack{
+    position: absolute;
+    /* top y left para ubicarlo en la esquina superior izquierda */
+    top: 0px;
+    left: 0px;
+    transition: 1s ease-in-out left; /* Empieza rapido, se calma a la mitad y termina rapido */
+    clear: both;
+}
+
+.bannerd .sliderTrack .sliderItem{
+    position: relative;
+    display: block;
+    /* Clase Sellada: Ninguna clase puede heredar de ella porque es la última 
+       !important: Esta propiedad no la va a poder cambiar nada*/
+    width: 100vw !important;
+    overflow: hidden;
+    padding: 0px; 
+    margin: 0px; 
+    float: left; /* Hace que se muevan en una direccion */
+}
+
+.bannerd .sliderTrack .sliderItem img{
+	height: 100vh;
+}
+
+/*----- PUNTITOS BANNER -------*/
+.bannerd .puntos{
+    position: relative;
+    top: 95vh;
+    width: 100vw;
+	height: 40px;
+	padding: 1px;
+    background-color: rgba(152, 30, 27, 0.60);
+    text-align: center;
+}
+
+.bannerd .puntos .dot{
+    z-index: 1;
+    border: 2px solid #fff;
+    border-radius: 100%;
+    background-color: transparent;  
+    width: 22px;
+    height: 23px;
+    display: inline-block;
+    margin-top: 5.5px;
+	margin-left: 4.3px;
+	padding: 1px;
+    cursor: pointer;
+}
+
+.puntos #dot1{
+    background-color: #fff; 
+}
+
+
+/*------------INFORMACION-------------------*/
+
+.infod{
+	max-width: 1280px; /*1350*/
+	margin: 0px auto;
+}
+
+#infod_pastorales{
+	margin-bottom: 2em;
+}
+
+.infod h2{
+	text-align: center;
+	font-family: "Oswald", "Arial", sans-serif;
+	margin-bottom: 14px;
+	padding: 0px 1em;
+}
+
+.infod .linea{
+	width: 7em;
+	margin-left: 33%;
+	border-bottom: 4px solid #981e1b;
+	margin-bottom: 3em;
+}
+
+.infod .opcionesf{
+	padding: 1em 0.5em;
+	margin: 0px 2em;
+	border: 2px solid #981e1b;
+	border-radius: 10%;
+}
+
+.infod .opcionesf h3{
+	text-align: center;
+}
+
+.infod .opcionesf ul{
+	list-style: none;
+	margin-left: 3em;
+} 
+
+.infod .opcionesf ul li{
+	padding: 1em;
+	text-align: justify;
+}
+
+.infod .opcionesf ul li i{
+	color: #981e1b;
+	margin-right: 4px;
+}
+
+.infod p{
+	margin-top: 0.1em;
+	text-align: justify;
+	padding: 2em 1.5em;
+	line-height: 1.5;
+}
+
+
+/************************* TARJETAS DE CONTENIDO ************************/
+
+/*------------ IMAGENES -------------------*/																
+
+.contenidod{
+	max-width: 1024px;
+	margin: 0px auto;
+}
+
+
+.contenidod .imagent{ 
+	background-color: #965752;
+	background-image: url(../img/tarjeta.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	min-height: 330px;
+	width: 330px;
+	float: none;
+	margin: 0px auto;
+}
+
+/* IMAGEN DE SERVICIOS */
+.contenidod .imagent1{ 
+	background-color: #965752;
+	background-image: url(../img/actlit4.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	min-height: 330px;
+	width: 330px;
+	float: none;
+	margin: 0px auto;
+}
+
+/*PASTORALES*/
+.contenidod .imagent2{ 
+	background-color: #965752;
+	background-image: url(../img/BJ3.JPG);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	min-height: 330px;
+	width: 330px;
+	float: none;
+	margin: 0px auto;
+}
+
+
+/*---------- TARJETAS -------------------*/	
+
+.contenidod .tarjetasd ul{
+	list-style: none;
+	padding: 2em;
+	text-align: justify;
+}
+
+.contenidod .tarjetasd ul li{	
+	box-sizing: content-box;
+	margin-bottom: 1.5em;
+	box-shadow: 5px 3px 5px #444;
+	padding: 1em;
+	
+	cursor: pointer; /*Cambiar mouse por manito cuando se pasa por las tarjetas*/
+	border: 1px solid #fff;
+	transition: 0.3s ease-in-out border-color;
+
+	/* Hacer el alto de la tarjeta mas pequeño y ocultar que se desborda el contenido */
+	height: 25px;
+	overflow: hidden;
+}
+
+.contenidod .tarjetasd ul li h3{
+	padding-bottom: 0.5em;
+	color: #981e1b;
+	font-size: 1.5em; 
+}
+
+
+/*---------- EFECTO DE LAS TARJETAS -------------------*/	
+
+/*Cambiar el borde cuando se da clic*/
+.contenidod .tarjetasd ul li:hover{
+	border-color: #981e1b;
+	transition: 0.3s ease-in-out border-color;
+}
+
+
+
+/*---------- BOTON TARJETAS -------------------*/	
+
+.contenidod .tarjetasd ul li .boton{
+	text-align: right;
+	margin-top: 7px;
+}
+
+.contenidod .tarjetasd ul li a{
+	text-decoration: none;
+	color: #000;
+	background-color: #f1cab6;
+	border: 2px solid #981e1b;
+	padding: 0.5em;
+	cursor: pointer;
+
+	font-size: 0.9em;
+	transition: 0.25s ease-in-out background-color;
+}
+
+.contenidod .tarjetasd ul li a:hover{
+	background-color: #981e1b;
+	border: 2px solid #f1cab6;
+	cursor: pointer;
+	color: #fff;
+	
+	transition: 0.25s ease-in-out background-color;
+}
+
+
+/************************  DIMENSIONES INDIVIDUALES *****************/
+
+/*---------- FRASE INICIO --------------*/	
+
+.frase{
+	position: relative;
+	padding-bottom: 0.5rem;
+}
+
+.frase .texto_frase{
+	background-color: #981e1b; 
+	color: #fff;
+	padding: 1.4em;
+	padding-left: 10px;
+	padding-top: 10px;
+	margin: 1em;
+	font-size: 1.2em;
+	margin-bottom: 5em; 
+}
+
+.frase img{
+	position: absolute;
+	width: 184px;
+	top: 43%;
+	left: 42%;
+	box-shadow: -3px 3px 7px #444; 
+}
+
+/*------------INFORMACION-------------------*/
+/*Se toma la clase infod*/
+
+.infod p:nth-child(2){ /*Segundo parrafo de info en Pascual*/
+	padding-top: 0px;
+}
+
+.infod .cont_pastoral{
+	margin-bottom: 1rem;
+} 
+
+.infod .cont_pastoral .imagen_pastoral{
+	position: relative;
+}
+
+.infod .cont_pastoral .imagen_pastoral span{
+	font-size: 5em;
+	color: rgba(12, 117, 216, 0.6);
+	font-weight: 600;
+	position: absolute;
+	top: 50%;
+	left: calc(65vw - 166.5px); /*20*/
+}
+
+/* IDs # para modificar el Texto de las Imagenes de las Pastorales */
+
+.infod .cont_pastoral .imagen_pastoral span#p2{
+	font-size: 3.2em;
+	color: rgba(139, 61, 212, 0.6);
+	top: 60%; /*60*/
+	left: calc(50vw - 166.5px); /*11*/
+}
+
+.infod .cont_pastoral .imagen_pastoral span#p3{
+	font-size: 3.5em;
+	color: rgba(255, 63, 4, 0.664);
+	top: 60%;
+	left: calc(60vw - 166.5px); /*17*/
+}
+
+.infod .cont_pastoral .imagen_pastoral span#p4{
+	font-size: 3.6em;
+	color: rgba(231, 178, 31, 0.7);
+	top: 61%;
+	left: calc(63vw - 166.5px); /*19*/
+}
+
+.infod .cont_pastoral .imagen_pastoral span#p5{
+	font-size: 4em;
+	color: rgba(231, 31, 181, 0.6);
+	top: 60%;
+	left: calc(67vw - 166.5px); /*25*/
+}
+
+.infod .cont_pastoral .imagen_pastoral span#p6{
+	font-size: 4em;
+	color: rgba(10, 238, 29, 0.6);
+	top: 60%;
+	left: calc(60vw - 166.5px); /*14*/
+}
+
+.infod .cont_pastoral .imagen_pastoral span#pl{
+	font-size: 4em;
+	color: rgba(240, 4, 4, 0.6);
+	top: 60%;
+	left: calc(56vw - 166.5px); /*14*/
+} 
+
+
+
+.infod .cont_pastoral .imagen_pastoral img{
+	width: 100vw;
+	margin-bottom: 2em;
+}
+
+.infod .cont_pastoral .info_pastoral h2{
+	margin-bottom: 0px;
+}
+
+.infod .cont_pastoral .info_pastoral p{
+	padding-top: 1em;
+	padding-bottom: 0.5em;
+}
+
+.cont_pastoral .flex_tarjetas{
+	display: flex; /* 2 tarjetas juntas con flex en celulares column*/
+	flex-direction: column;
+}
+
+.infod .cont_pastoral .tarjetas_pastoral{
+	padding: 0.5em;
+	text-align: justify;
+}
+
+.infod .cont_pastoral .tarjetas_pastoral h2{
+	font-family: "Oswald", "Arial", sans-serif;
+	padding: 6px;
+	width: 45%;
+	background-color: #981e1b;
+	color: #fff;
+	margin: 0.5em auto;
+	margin-top: 1em;
+}
+
+.infod .cont_pastoral .tarjetas_pastoral ul{
+	padding: 1.2em;
+	margin-left: 0.7rem;
+	margin-right: 0.7rem;
+}
+
+.infod .cont_pastoral .tarjetas_pastoral ul li{
+	margin-bottom: 0.5em;
+	line-height: 1.5;
+}
+
+
+/* TARJETA DE MISIONERA */
+.infod .cont_pastoral .tarjetas_pastoral#tarjetam ul{
+	list-style: none;
+}
+
+.infod .cont_pastoral .tarjetas_pastoral#tarjetam ul li .boton{
+	text-align: center;
+	margin-top: 1.4rem;
+}
+
+.infod .cont_pastoral .tarjetas_pastoral#tarjetam ul li .boton a{
+	text-decoration: none;
+	color: #000;
+	background-color: #f1cab6;
+	border: 2px solid #981e1b;
+	padding: 0.5em;
+	cursor: pointer;
+
+	font-size: 0.9em;
+	transition: 0.25s ease-in-out background-color;
+}
+
+.infod .cont_pastoral .tarjetas_pastoral#tarjetam ul li .boton a:hover{
+	background-color: #981e1b;
+	border: 2px solid #f1cab6;
+	cursor: pointer;
+	color: #fff;
+	
+	transition: 0.25s ease-in-out background-color;
+}
+
+
+
+/*---------- GALERIA -------------------*/	
+
+.sec_galeria h2{
+	text-align: center;
+	margin: 1em 1em;
+	padding: 8px;
+	background-color: #f1cab6;
+	box-shadow: -5px 5px 1px #981e1b;
+	font-family: "Oswald", "Arial", sans-serif;
+}
+
+.cont_galeria{
+	margin-top: 1em;
+	margin-bottom: 2em;
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.sec_galeria .cont_galeria li{
+	margin: 1em;
+	position: relative;
+}
+
+.sec_galeria .cont_galeria li a{
+	text-decoration: none;
+	color: #000;
+	
+}
+
+.sec_galeria .cont_galeria li a i{
+	position: absolute;
+	top: 40%;
+	left: 40%;
+	color: #fff;
+	font-size: 3em;
+	visibility: hidden;
+}
+
+.sec_galeria .cont_galeria li a img{
+	width: 100%;
+	margin: auto;
+	border-radius: 3%;
+	box-shadow: 7px 7px 5px #444;
+	transition: 0.25s ease-in-out filter;
+}
+
+.sec_galeria .cont_galeria li a img:hover{
+	/*Colocar filtro de luminosidad a la imagen*/
+	filter: brightness(60%);
+	transition: 0.25s ease-in-out filter;
+}
+
+
+
+/*---------- VISUALIZACION DE IMAGENES -------------------*/	
+
+.sec_galeria .visualizar{
+	display: none; /* Se quita el elemento. Como que no existe */
+	z-index: 3;
+}
+
+/* :target para que cuando se de click lo muestre */
+.sec_galeria .visualizar:target{
+	display: block;
+	position: fixed; /*Siempre permanece en el mismo lugar aunque se de scroll*/
+	background-color: rgba(0,0,0,0.9); /*El ultimo dato corresponde a "alpha" transparencia*/
+	top: 0px;
+	left: 0px; 
+	width: 100%;
+	height: 100%;
+}
+
+.sec_galeria .visualizar h3{
+	color: #fff;
+	font-size: 1.3em;
+	text-align: center;
+	margin-top: 0px;
+}
+
+.sec_galeria .visualizar .cuadro_imagen{
+	max-width: 100%;
+	padding-top: 25vh;
+	text-align: center;
+	padding: 0px 8px;
+
+	/*FLEX PARA CENTRAR LAS FLECHITAS DE BUSQUEDA*/
+	display: flex;
+	justify-content: center; /*Horizontal*/
+	align-items: center; /*Vertical*/
+}
+
+.sec_galeria .visualizar .cuadro_imagen a{
+	color: #f1cab6;
+	text-decoration: none;
+	font-size: 2.2em;
+	padding: 0px;
+	margin: 0px;
+}
+
+.sec_galeria .visualizar .cuadro_imagen a img{
+	width: 95%;
+	text-align: center;
+	margin: 0px;
+	padding: 0px;
+	border: 3px solid #f1cab6;
+}
+
+.sec_galeria .visualizar a i{
+	color: #f1cab6;
+	padding: 0px;
+	margin: 0px;
+	margin-top: 25vh;
+	margin-left: 88vw;
+	padding-bottom: 4px;	
+}
+
+
+@media(min-width: 415px) /* Tabletas */
+{
+	/* DIMENSIONES */
+
+	/* BANNER */
+	.bannerd{
+		margin-bottom: 3em;
+	}
+	
+	.bannerd h1{
+		font-size: 8em;
+		top: calc(50% - 70px);
+		left: calc(50% - 245px);
+	}
+
+	.bannerd h1#pascual{
+		top: calc(50% - 55px);
+		left: calc(50% - 150px); 
+	}
+
+	.bannerd h1#misionera{
+		top: calc(50% - 55px);
+		left: calc(45% - 150px); 
+	}
+
+	/* .bannerd .puntos{
+		top: 95vh;
+		height: 61px; /*65*/
+	/*} */
+	
+	/*.bannerd .puntos .dot{
+		width: 25px; /*32*/
+		/*height: 25px;
+		margin-top: 7px; 
+		margin-left: 12px;
+	} */
+
+	.bannerd .puntos{
+        top: 95.8%;
+        height: 5em;
+		width: 100vw;
+	}
+
+	.bannerd .puntos .dot{
+        width: 30px;
+        height: 30px;
+		margin-top: 5.7px;
+		margin-left: 12px;
+	}
+	
+	.bannerd .tituloservicios h1{
+		top: calc(43% - 55px);
+		left: calc(38% - 150px); 
+
+		font-size: 10em;
+	}
+
+	.bannerd .tituloactli h1{
+		top: calc(42% - 55px);
+		left: calc(45% - 200px); 
+		font-size: 8em;
+	}
+
+	.bannerd .tituloofi h1{
+		top: calc(41% - 55px);
+		left: calc(45% - 185px); 
+		font-size: 8em;
+	}
+
+	/* INFORMACION */
+
+	.infod{
+		font-size: 1.1rem;
+	}
+
+	.infod h2{
+		font-size: 1.9em;
+		padding: 1em;
+		margin-bottom: 0px;
+	}
+
+	.infod p{
+		font-size: 1.5em;
+	}
+
+	.infod p#p_actlit{
+		padding-top: 0px;
+	}
+
+	.infod .linea{
+		margin-left: 42%;
+		width: 8em;
+		margin-top: 0px;
+	}
+
+	.infod .opcionesf{
+		margin: 0px 3.1em;
+	}
+
+	.infod .opcionesf h3{
+		margin-bottom: 1em;
+		font-size: 1.5em;
+	}
+
+	.infod .opcionesf ul{
+		display: flex;
+		justify-content: space-between;
+		margin-left: 5px;
+	}
+
+	.infod .opcionesf ul li{
+		padding: 10px;
+		margin-left: 1px;
+		font-size: 1.5em;
+		text-align: center;
+	}
+
+	/* TARJETAS */
+
+	.contenidod .imagent{
+		float: right;
+		margin-top: 2.5em;
+		margin-right: 2.4em;
+	}
+
+	/*IMAGEN SRVICIOS*/
+	.contenidod .imagent1{
+		float: right;
+		margin-top: 2.5em;
+		margin-right: 2.4em;
+		margin-block-end: 2.5em;
+	}
+	
+	.contenidod .imagent2{
+		float: right;
+		margin-top: 2.5em;
+		margin-right: 2.4em;
+	}
+	
+
+	.contenidod .tarjetasd ul li{
+		margin-bottom: 2.3em;
+		max-width: 40vw;
+	}
+
+	.contenidod .tarjetasd ul li p{
+		font-size: 1.02em;
+	}
+
+	.contenidod .tarjetasd ul li .boton{
+		text-align: right;
+		margin-top: 12px;
+	}
+
+
+	/* FRASE DIMENSIONES INDIVIDUALES */
+
+	.frase{
+		margin-bottom: 8rem;
+	}
+
+	.frase .texto_frase{
+		padding: 1.8rem;
+	}
+
+	.frase .texto_frase p{
+		font-size: 1.8rem;
+	}
+
+	.frase img{
+		top: 47%;
+		left: 40%;
+		width: 350px;
+		box-shadow: -5px 3px 7px #444; 
+	}
+
+	.frase img#imgmisionera{
+		top: 53%;
+		left: 40%;
+	}
+
+	/* IMAGENES DIMENSIONES PASTORALES */
+
+	.infod .cont_pastoral .imagen_pastoral{
+		text-align: center;
+	}
+
+	.infod .cont_pastoral .imagen_pastoral img{
+		width: 90vw;
+	}
+
+	.infod .cont_pastoral .imagen_pastoral span{
+		font-size: 9rem;
+		left: calc(70vw - 345.5px);
+	}
+
+	.infod .cont_pastoral .imagen_pastoral span#p2{
+		font-size: 5em;
+		left: calc(60vw - 345.5px);
+	}
+
+	.infod .cont_pastoral .imagen_pastoral span#p3{
+		font-size: 6.5rem;
+		left: calc(64vw - 345.5px);
+	}
+
+	.infod .cont_pastoral .imagen_pastoral span#p4{
+		font-size: 6em;
+		top: 61%;
+		left: calc(65vw - 345.5px); 
+	}
+
+	.infod .cont_pastoral .imagen_pastoral span#p5{
+		font-size: 7rem;
+		top: 60%;
+		left: 29%;
+	} 
+
+	.infod .cont_pastoral .imagen_pastoral span#p6{
+		font-size: 6em;
+		top: 60%;
+		left: 20%;
+	} 
+
+	.infod .cont_pastoral .imagen_pastoral span#pl{
+		font-size: 6em;
+		left: calc(42vw - 166.5px); 
+	} 
+
+	.infod .cont_pastoral .info_pastoral h2{
+		padding-top: 0px;
+		padding-bottom: 1.5rem;    
+	}
+
+	.infod .cont_pastoral .info_pastoral p{
+		padding-top: 1rem;  
+	}
+
+
+	/* TARJETAS DIMENSIONES PASTORALES */
+	
+	.infod .cont_pastoral{
+		margin-bottom: 2rem;
+	}
+
+	.cont_pastoral .tarjetas_pastoral ul{
+		margin-left: 1.7rem;
+		margin-right: 1.7rem;
+	}
+
+	.cont_pastoral .tarjetas_pastoral ul li{
+		font-size: 1.8rem;
+	}
+
+	.infod .cont_pastoral .tarjetas_pastoral#tarjetam ul li .boton{
+		margin-top: 2.5rem;
+	}
+
+
+	/* GALERIA DIMENSIONES INDIVIDUALES */
+	
+	.sec-galeria{
+		margin: 0.5em 0px;      
+	}
+
+	.sec_galeria h2{
+		font-size: 2.3em;
+		margin-bottom: 1.2em; 
+	}
+
+	.sec_galeria .cont_galeria li{
+		margin: 0.5em 0px;
+		width: 45%;
+		text-align: center;
+	}
+
+	.sec_galeria .cont_galeria li a img{
+		width: 90%;
+	}
+
+	.sec_galeria .cont_galeria li a i{
+		left: 42%; 
+	}
+
+	/* VISUALIZACION */
+
+	.sec_galeria .visualizar h3{
+		font-size: 2em;
+	}
+
+	.sec_galeria .visualizar a i{
+		font-size: 2em;
+		margin-left: 87.5vw;
+	}
+
+	.sec_galeria .visualizar .cuadro_imagen a{
+		font-size: 4em;
+		padding: 0px 10px;
+	}
+
+	.sec_galeria .visualizar .cuadro_imagen a img{
+		width: 80vw;
+	}
+}
+
+@media(min-width: 1024px) /* Ordenador */
+{
+	/* DIMENSIONES */
+
+	/* BANNER */
+
+	.bannerd{
+		margin-bottom: 3em;
+		width: 98.96vw;
+		height: 100vh;
+		overflow: hidden;
+	}
+
+	.bannerd .sliderTrack .sliderItem img{
+		width: 98.96vw;
+		height: 100vh;
+	}
+
+	.bannerd .puntos{
+		height: 2.4em;
+		width: 100vw;
+		top: 95%;
+	}
+
+	.bannerd .puntos .dot{
+		margin-top: 5px;
+		margin-left: 10px;
+		width: 25px;
+        height: 25px;
+	}
+	
+	.bannerd h1{
+		font-size: 8em;
+		top: calc(50% - 100px);
+		left: calc(50% - 260px);
+	}
+
+	.bannerd .tituloservicios h1{
+		top: calc(47% - 55px);
+		left: calc(46% - 150px); 
+
+		font-size: 9em;
+	}
+
+	.bannerd .tituloactli h1{
+		top: calc(45% - 55px);
+		left: calc(26% - 200px); 
+		font-size: 6em;
+		width: 12em;
+	}
+
+	.bannerd .tituloofi h1{
+		top: calc(45% - 55px);
+		left: calc(26% - 185px);
+		width: 12em; 
+		font-size: 6em;
+	}
+
+	/* INFORMACION */
+
+	.infod .linea{
+		margin-left: 46%;
+	}
+
+	.infod .linea#linea_servicios{
+		margin-left: 44%;
+	}
+
+	/* TARJETAS */
+
+	.contenidod .imagent{
+		float: right;
+		margin-top: 2em;
+		margin-right: 2em;
+		max-width: 400px;
+		width: 400px;
+		min-height: 380px; 
+	}
+
+	/*IMAGEN SERVICIOS*/
+	.contenidod .imagent1{
+		float: right;
+		margin-top: 2em;
+		margin-right: 2em;
+		max-width: 400px;
+		width: 400px;
+		min-height: 380px; 
+	}
+
+	.contenidod .imagent2{
+		float: right;
+		margin-right: 2em;
+		max-width: 400px;
+		width: 400px;
+		min-height: 380px; 
+	}
+
+	.contenidod .tarjetasd ul{
+		padding-left: 2em; /*1.8*/
+	}
+
+	.contenidod .tarjetasd ul li{
+		margin-bottom: 3em; /*1.8*/
+		max-width: 30vw;
+	}
+
+	.contenidod .tarjetasd ul li p{
+		font-size: 1.2em; 
+	}
+
+	.contenidod .tarjetasd ul li .boton{
+		text-align: right;
+		margin-top: 8px;
+	}
+
+
+	/* FRASE DIMENSIONES INDIVIDUALES */
+
+	.frase{
+		margin-bottom: 11rem;
+	}
+
+	.frase img{
+		top: 37%;
+		left: 50%;
+		width: 450px;
+	}
+
+	.frase img#imgpascual{
+		top: 43%;
+		left: 50%;
+		width: 450px;
+	}
+
+	.frase img#imgmisionera{
+		top: 45%;
+		left: 50%;
+	}
+
+	/* IMAGENES DIMENSIONES PASTORALES */
+	.infod .cont_pastoral{
+		margin-bottom: 5rem;
+	}
+
+	.infod .cont_pastoral .imagen_pastoral{
+		text-align: center;
+	}
+
+	.infod .cont_pastoral .imagen_pastoral img{
+		width: 53vw;
+	}
+
+	.infod .cont_pastoral .imagen_pastoral span{
+		top: 55%;
+		left: 34%;
+	}
+
+	.infod .cont_pastoral .imagen_pastoral span#p2{
+		top: 65%;
+		left: 28%;
+	}
+
+	.infod .cont_pastoral .imagen_pastoral span#p3{
+		font-size: 6.5rem;
+		top: 63%;
+		left: 33%;
+	}
+
+	.infod .cont_pastoral .imagen_pastoral span#p4{
+		top: 69%;
+		left: 33%;
+	}
+
+	.infod .cont_pastoral .imagen_pastoral span#p5{
+		font-size: 7.5rem;
+		top: 60%;
+		left: 39%;
+	}
+	
+	.infod .cont_pastoral .imagen_pastoral span#p6{
+		top: 67%;
+		left: 33%;
+	}
+	
+	.infod .cont_pastoral .imagen_pastoral span#pl{
+		left: calc(37vw - 166.5px);
+	} 
+
+	.infod .cont_pastoral .info_pastoral h2{
+		padding-top: 0px;
+		padding-bottom: 1.5rem;    
+	}
+
+	.infod .cont_pastoral .info_pastoral p{
+		padding-top: 1rem;  
+	}
+
+	/* TARJETAS DIMENSIONES PASTORALES */
+	/* SE INTENTA PONER SOMBRA A ESTAS */
+	.cont_pastoral .flex_tarjetas{
+		display: flex; /* 2 tarjetas juntas con flex */
+		flex-direction: row;
+	}
+
+	.cont_pastoral .tarjetas_pastoral{
+		box-shadow: -3px 1px 3px #444, 3px 3px 3px #444;
+		margin-top: 5rem;
+		margin-left: 2rem;
+		position: relative;
+		z-index: 2;
+	}
+
+	.cont_pastoral .tarjetas_pastoral h2#rojo_contacto{
+		top: -28%;
+	}
+
+	/*Para mantener alineadas las 2 tarjetas que estan juntas con flex*/
+	.cont_pastoral .tarjetas_pastoral#t2{
+		min-height: 470.8px;
+	}
+
+	.cont_pastoral .tarjetas_pastoral h2{
+		position: absolute;
+		top: -15%;
+		left: 27%;
+		z-index: 2;
+	}
+
+	.cont_pastoral .tarjetas_pastoral .trojo_actlit{
+		top: -22%;
+		left: 27%;
+	}
+
+	.cont_pastoral .tarjetas_pastoral .soporte{
+		position: absolute;
+		background-color: #444;
+		padding: 12px;
+		width: 45%;
+		top: -6%;
+		left: 26.5%;
+		transform: skewX(160deg); /*Deformacion donde se establece un ángulo para torcer o inclinar un elemento en 2D*/
+	}
+
+	.cont_pastoral .tarjetas_pastoral .soporte_actlit{
+		position: absolute;
+		background-color: #444;
+		padding: 12px;
+		width: 45%;
+		top: -9.3%;
+		left: 26.5%;
+		transform: skewX(160deg);
+	}
+
+	/*soporte2 para cuando hay 2 tarjetas juntas con flex*/
+	.cont_pastoral .tarjetas_pastoral .soporte2{
+		position: absolute;
+		background-color: #444;
+		padding: 20px;
+		width: 45%;
+		top: -8%;
+		left: 25.8%;
+		transform: skewX(160deg); /*Deformacion donde se establece un ángulo para torcer o inclinar un elemento en 2D*/
+	}
+
+	.cont_pastoral .tarjetas_pastoral .soporte_contacto{
+		position: absolute;
+		background-color: #444;
+		padding: 12px;
+		width: 45%;
+		top: -12%;
+		left: 26.5%;
+		transform: skewX(160deg);
+	}
+
+	/* TARJETA DE MISIONERA*/
+	.cont_pastoral .tarjetas_pastoral#tarjetam h2{
+		top: -23%;
+	}
+
+	.cont_pastoral .tarjetas_pastoral#tarjetam .soporte{
+		padding: 15px;
+		top: -11%;
+		left: 26.5%;
+	}
+
+	.cont_pastoral .tarjetas_pastoral ul{
+		margin-top: 3rem;
+	}
+
+	.cont_pastoral .tarjetas_pastoral ul li{
+		font-size: 1.6rem;
+	}
+
+
+	/* SAMARITANA GALERIA */
+
+	.sec_galeria .cont_galeria li{
+		width: 33%;
+		text-align: center;
+		margin-left: 0px;
+		right: 10px;
+	}
+
+	.sec_galeria .cont_galeria li a img{
+		width: 83%;
+	}
+
+	.sec_galeria .cont_galeria li a i{
+		left: 44%;
+	}
+
+	/* SAMARITANA VISUALIZAR*/
+
+	.sec_galeria .visualizar a i{
+		margin-top: 8.5vh;
+		margin-left: 73.2vw;
+	}
+
+	.sec_galeria .visualizar h3{
+		margin-top: 71.5vh;
+		font-family: "Raleway", "Arial", sans-serif;
+	}
+
+	.sec_galeria .visualizar .cuadro_imagen{
+		position: absolute;
+		top: 13vh;
+		left: 20vw;
+		visibility: visible;
+	}
+
+	.sec_galeria .visualizar .cuadro_imagen a img{
+		width: 50vw;
+	}
+}
+
+

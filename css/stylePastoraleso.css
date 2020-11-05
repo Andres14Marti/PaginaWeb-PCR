@@ -1,0 +1,138 @@
+
+/*---------------------------------------------------------*/
+
+/*Informacion*/
+.bannerd h1#titulo_pastorales{
+	left: calc(56% - 150px);
+}
+
+.bannerd h1#titulo_pastoral{
+	font-size: 3.3em;
+	left: calc(48% - 150px);
+}
+
+.bannerd h1#titulo_juvenil{
+	font-size: 3.3em;
+	left: calc(52% - 150px);
+}
+
+
+.orden{
+  width: 100vw;
+  display: flex;
+  margin: 0px auto;
+  padding: 5%;
+  flex-direction: column;
+  
+}
+
+.orden h2{
+	text-align: center;
+	font-family: "Oswald", "Arial", sans-serif;
+	margin-bottom: 14px;
+	padding: 0px 1em;
+	font-size: 2em;
+	
+}
+
+.content-box-Mora {
+  background-color: #f1cab6;
+  width: 100%;
+
+  margin-bottom: 5em;
+
+  margin-left: 0pt;
+  margin-right: 0pt;
+
+  padding: 50px;
+  
+  font-family:  'Arial';
+
+  box-shadow: 5px 3px 5px #444;
+	
+}
+
+
+.content-box-Mora h2{
+	color: #d44f45;
+	margin-right: 4px;
+}
+
+
+.fonts{
+	font-size: 24px;
+}
+
+.fonts ul li{
+  color: #252323;
+  margin-left: 5%;
+  padding-bottom: 1em;
+}
+
+.font ul p{
+    margin-top: 20px;
+}
+
+@media(min-width: 415px) /* Tabletas */
+{
+	.bannerd h1#titulo_pastoral{
+		font-size: 7.5em;
+		left: calc(25% - 150px);
+	}
+
+	.bannerd h1#titulo_juvenil{
+		font-size: 7.5em;
+		left: calc(28% - 150px);
+	}
+
+	.imagent2{
+		margin-top: 2.4em;
+	}
+
+	.orden{
+		flex-direction:column;
+		flex:0;
+		width: 93vw;
+		align-items: center;
+	}
+ 
+	.orden h2{
+		flex-grow:1;
+	}
+
+	.content-box-Mora {
+		flex-direction:column;
+		margin-bottom: 3em;
+		padding: 35px;
+	}
+	
+}
+
+
+
+@media(min-width: 1024px) /* Ordenadores */
+{
+	.bannerd h1#titulo_pastoral{
+		font-size: 7.5em;
+		left: calc(36% - 150px);
+	}
+
+	.bannerd h1#titulo_juvenil{
+		left: calc(38% - 150px);
+	}
+
+	.orden {
+		flex-direction: row;
+		padding-top: 3.5em;
+		align-items: stretch;
+	}
+
+	.orden .content-box-Mora#Mora2{
+		margin-left: 3em;
+	}
+}
+
+ 
+
+
+
