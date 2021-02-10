@@ -60,7 +60,7 @@ header::before {
     /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, hsla(25, 16%, 41%, 0.459), hsla(21, 48%, 53%, 0.664)), url(../img/1sld.jpg);
     /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, hsla(25, 16%, 41%, 0.459), hsla(21, 48%, 53%, 0.664)), url(../img/1sld.JPG);
+    background: linear-gradient(to right, hsla(25, 16%, 41%, 0.459), hsla(21, 48%, 53%, 0.664)), url(../img/1sld.jpg);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-size: cover;
     background-attachment: fixed;
@@ -1330,7 +1330,7 @@ main .historia{
 /*PASTORALES*/
 .contenidod .imagent2{ 
 	background-color: #965752;
-	background-image: url(../img/BJ3.JPG);
+	background-image: url(../img/BJ3.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
